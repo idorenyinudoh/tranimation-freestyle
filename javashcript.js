@@ -15,7 +15,9 @@ var toggle = () => {
     }
 }
 
-button.addEventListener('focus', toggle);
+button.addEventListener('click', toggle);
 button.addEventListener('mouseover', toggle)
 button.addEventListener('mouseout', toggle);
+box.addEventListener('mouseover', toggle)
+box.addEventListener('mouseout', toggle);
 button.addEventListener('blur', toggle);
