@@ -1,14 +1,16 @@
 #random-box {
     background-color: lightgreen;
+    border: 1px solid black;
 }
 .hide {
     display: none;
 }
 .show {
-    animation: testing 1s cubic-bezier(0.46, 0.03, 0.52, 0.96) forwards;
+    animation: testing 200ms cubic-bezier(0.46, 0.03, 0.52, 0.96) forwards;
 }
 .remove {
-    animation: disappear 1s cubic-bezier(0.46, 0.03, 0.52, 0.96) forwards;
+    animation: disappear 200ms cubic-bezier(0.46, 0.03, 0.52, 0.96) forwards;
+    overflow: hidden;
 }
 @keyframes disappear {
     from {
