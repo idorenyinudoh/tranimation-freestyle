@@ -39,3 +39,11 @@ button {
     font-size: 16px;
     color: black;
 }
+.turn {
+    transform: rotate(-180deg);
+    transition: transform 200ms linear;
+}
+.unturn {
+    transform: rotate(180deg);
+    transition: transform 200ms linear;
+}
