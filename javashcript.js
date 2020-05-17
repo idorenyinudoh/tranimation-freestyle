@@ -3,24 +3,19 @@ var box = document.getElementById('random-box');
 var button = document.getElementById('button');
 var icon = document.getElementById('icon');
 
-var toggleBox = () => {
-    if(box.className == 'show'){
+var toggle = () => {
+    if(box.className == 'show' && icon.classList.contains('turn')) {
         box.className = 'remove';
-    } else{
-        box.className = 'show';
-    }
-}
-var toggleTurn = () => {
-    if(icon.classList.contains('turn')){
         icon.classList.add('unturn');
         icon.classList.remove('turn');
-    } else{
+    } else {
+        box.className = 'show';
         icon.classList.add('turn');
         icon.classList.remove('unturn');
     }
 }
 
-button.addEventListener('focus', toggleBox);
-button.addEventListener('focus', toggleTurn);
-button.addEventListener('blur', toggleBox);
-button.addEventListener('blur', toggleTurn);
+button.addEventListener('focus', toggle);
+button.addEventListener('mouseover', toggle)
+button.addEventListener('mouseout', toggle);
+button.addEventListener('blur', toggle);
