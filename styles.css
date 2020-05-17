@@ -44,6 +44,5 @@ button {
     transition: transform 200ms linear;
 }
 .unturn {
-    transform: rotate(180deg);
     transition: transform 200ms linear;
 }
