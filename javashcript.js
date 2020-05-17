@@ -5,3 +5,6 @@ var button = document.getElementById('button');
 button.addEventListener('focus', () => {
     box.className = 'show';
 }, false);
+button.addEventListener('blur', () => {
+    box.className = 'remove';
+}, false);
