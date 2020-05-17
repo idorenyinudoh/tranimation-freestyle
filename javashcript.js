@@ -8,6 +8,7 @@ var toggle = () => {
         box.className = 'remove';
         icon.classList.add('unturn');
         icon.classList.remove('turn');
+        setTimeout(() => {box.className = 'hide'}, 250);
     } else {
         box.className = 'show';
         icon.classList.add('turn');
