@@ -2,9 +2,13 @@ var show = document.getElementById('show');
 var box = document.getElementById('random-box');
 var button = document.getElementById('button');
 
-button.addEventListener('focus', () => {
-    box.className = 'show';
-}, false);
-button.addEventListener('blur', () => {
-    box.className = 'remove';
-}, false);
+var toggleBox = () => {
+    if(box.className == 'show'){
+        box.className = 'remove';
+    } else{
+        box.className = 'show';
+    }
+}
+
+button.addEventListener('focus', toggleBox);
+button.addEventListener('blur', toggleBox);
