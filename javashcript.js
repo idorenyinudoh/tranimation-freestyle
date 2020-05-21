@@ -1,13 +1,20 @@
 const play = document.getElementById('play');
 const pause = document.getElementById('pause');
 
-play.addEventListener('click', () => {
-    play.classList.add('playdown');
-    pause.classList.add('movedown');
-});
-pause.addEventListener('click', () => {
-    pause.classList.add('moveup');
-    pause.classList.remove('movedown');
-    play.classList.add('playup');
-    play.classList.remove('playdown');
-});
+let toggle = () => {
+    if(play.classList.contains('playdown') && pause.classList.contains('movedown')) {
+        pause.classList.add('moveup');
+        play.classList.add('playup');
+        pause.classList.remove('movedown');
+        play.classList.remove('playdown');
+    }
+    else {
+        play.classList.add('playdown');
+        pause.classList.add('movedown');
+        play.classList.remove('playup');
+        pause.classList.remove('moveup');
+    }
+};
+
+play.addEventListener('click', toggle);
+pause.addEventListener('click', toggle);
