@@ -11,13 +11,9 @@
     display: grid;
     place-content: center;
 }
-#pause-container, #play-container {
+button {
     width: 30px;
     height: 30px;
-}
-button {
-    width: inherit;
-    height: inherit;
     display: block;
     padding: 0;
     margin: 0;
