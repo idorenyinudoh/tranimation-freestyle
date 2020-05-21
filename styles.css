@@ -29,3 +29,7 @@ span {
     display: block;
     margin: 3px;
 }
+#play:active {
+    transform: rotate(90deg);
+    transition: transform 10s linear;
+}
