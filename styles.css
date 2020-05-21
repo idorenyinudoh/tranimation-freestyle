@@ -28,12 +28,24 @@ span {
 .turn {
     animation: play 300ms ease-out forwards;
 }
+.move {
+    animation: pause 300ms ease-out forwards;
+}
 @keyframes play {
     from {
         opacity: 1;
     }
     to {
-        opacity: 0;
+        opacity: 0.5;
         transform: rotate(90deg) translateX(30px);
+    }
+}
+@keyframes pause {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(30px);
     }
 }
