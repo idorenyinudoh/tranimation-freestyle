@@ -8,4 +8,6 @@ play.addEventListener('click', () => {
 pause.addEventListener('click', () => {
     pause.classList.add('moveup');
     pause.classList.remove('move');
+    play.classList.add('playup');
+    play.classList.remove('turn');
 });
