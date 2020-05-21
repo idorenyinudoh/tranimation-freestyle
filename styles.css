@@ -3,6 +3,9 @@
     height: 300px;
     background-color: lightgreen;
     margin: auto;
+    display: grid;
+    gap: 5px;
+    place-content: center;
 }
 #pause-container, #play-container {
     width: 30px;
@@ -17,6 +20,7 @@ button {
     margin: 0;
     border: 0;
     background-color: inherit;
+    cursor: pointer;
 }
 span {
     display: block;
