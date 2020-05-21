@@ -25,8 +25,8 @@ span {
     display: block;
     margin: 3px;
 }
-.turn {
-    animation: play 300ms ease-out forwards;
+.playdown {
+    animation: playdown 300ms ease-out forwards;
 }
 .movedown {
     animation: movedown 300ms ease-out forwards;
@@ -37,7 +37,7 @@ span {
 .playup {
     animation: playup 300ms ease-out forwards;
 }
-@keyframes play {
+@keyframes playdown {
     from {
         opacity: 1;
     }
