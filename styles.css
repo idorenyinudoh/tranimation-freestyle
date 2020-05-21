@@ -34,6 +34,9 @@ span {
 .moveup {
     animation: moveup 300ms ease-out forwards;
 }
+.playup {
+    animation: playup 300ms ease-out forwards;
+}
 @keyframes play {
     from {
         opacity: 1;
@@ -41,6 +44,16 @@ span {
     to {
         opacity: 0.5;
         transform: rotate(90deg) translateX(30px);
+    }
+}
+@keyframes playup {
+    from {
+        opacity: 0.5;
+        transform: rotate(90deg) translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg) translateX(0);
     }
 }
 @keyframes movedown {
