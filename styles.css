@@ -30,6 +30,14 @@ span {
     margin: 3px;
 }
 #play:active {
-    transform: rotate(90deg);
-    transition: transform 10s linear;
+    animation: play 300ms ease-out forwards;
+}
+@keyframes play {
+    from {
+        /*opacity: 1;*/
+    }
+    to {
+        /*opacity: 0;*/
+        transform: rotate(90deg) translateX(30px);
+    }
 }
