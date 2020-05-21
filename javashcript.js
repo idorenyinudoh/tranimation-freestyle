@@ -2,17 +2,17 @@ const play = document.getElementById('play');
 const pause = document.getElementById('pause');
 
 let toggle = () => {
-    if(play.classList.contains('playdown') && pause.classList.contains('movedown')) {
-        pause.classList.add('moveup');
+    if(play.classList.contains('playdown') && pause.classList.contains('show')) {
+        pause.classList.add('hide');
         play.classList.add('playup');
-        pause.classList.remove('movedown');
+        pause.classList.remove('show');
         play.classList.remove('playdown');
     }
     else {
         play.classList.add('playdown');
-        pause.classList.add('movedown');
+        pause.classList.add('show')
         play.classList.remove('playup');
-        pause.classList.remove('moveup');
+        pause.classList.remove('hide');
     }
 };
 
