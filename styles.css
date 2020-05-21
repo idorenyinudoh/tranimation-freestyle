@@ -1,7 +1,13 @@
 #box {
     border: 1px solid black;
     padding: 2px;
-    height: 90px;
+    height: 30px;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
 }
 #audio {
     width: 300px;
@@ -28,12 +34,6 @@ span {
 .playdown {
     animation: playdown 300ms ease-out forwards;
 }
-.movedown {
-    animation: movedown 300ms ease-out forwards;
-}
-.moveup {
-    animation: moveup 300ms ease-out forwards;
-}
 .playup {
     animation: playup 300ms ease-out forwards;
 }
@@ -54,24 +54,5 @@ span {
     to {
         opacity: 1;
         transform: rotate(0deg) translateX(0);
-    }
-}
-@keyframes movedown {
-    from {
-        opacity: 0.5;
-    }
-    to {
-        opacity: 1;
-        transform: translateY(30px);
-    }
-}
-@keyframes moveup {
-    from {
-        opacity: 1;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 0.5;
-        transform: translateY(0);
     }
 }
