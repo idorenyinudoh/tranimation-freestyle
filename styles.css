@@ -4,3 +4,21 @@
     background-color: lightgreen;
     margin: auto;
 }
+#pause-container, #play-container {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+button {
+    width: inherit;
+    height: inherit;
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: inherit;
+}
+span {
+    display: block;
+    margin: 3px;
+}
